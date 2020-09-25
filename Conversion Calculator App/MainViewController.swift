@@ -8,10 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     @IBOutlet weak var lengthTopEnterValue: DecimalMinusTextField!
-    
     
     @IBOutlet weak var lengthBottomEnterValue: DecimalMinusTextField!
     
@@ -57,7 +56,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UITextFieldDelegate {
+extension MainViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 
         

@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		2C2C534F251DCAFE009AE121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C534E251DCAFE009AE121 /* AppDelegate.swift */; };
 		2C2C5351251DCAFE009AE121 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C5350251DCAFE009AE121 /* SceneDelegate.swift */; };
-		2C2C5353251DCAFE009AE121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C5352251DCAFE009AE121 /* ViewController.swift */; };
+		2C2C5353251DCAFE009AE121 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C5352251DCAFE009AE121 /* MainViewController.swift */; };
 		2C2C5356251DCAFE009AE121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2C5354251DCAFE009AE121 /* Main.storyboard */; };
 		2C2C5358251DCB00009AE121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2C5357251DCB00009AE121 /* Assets.xcassets */; };
 		2C2C535B251DCB00009AE121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2C5359251DCB00009AE121 /* LaunchScreen.storyboard */; };
 		2C2C5366251DCB00009AE121 /* Conversion_Calculator_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C5365251DCB00009AE121 /* Conversion_Calculator_AppTests.swift */; };
 		2C2C5371251DCB00009AE121 /* Conversion_Calculator_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C5370251DCB00009AE121 /* Conversion_Calculator_AppUITests.swift */; };
-		2C2C5383251DDB3E009AE121 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C5382251DDB3E009AE121 /* DecimalMinusTextField.swift */; };
-		2C2C5384251DDB3E009AE121 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C5382251DDB3E009AE121 /* DecimalMinusTextField.swift */; };
-		2C2C5385251DDB3E009AE121 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C5382251DDB3E009AE121 /* DecimalMinusTextField.swift */; };
 		2C2C5386251DE03A009AE121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2C5354251DCAFE009AE121 /* Main.storyboard */; };
 		2C2C5387251DE03B009AE121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2C5354251DCAFE009AE121 /* Main.storyboard */; };
-		2C2C5389251DF4D1009AE121 /* DecimalMinusTextField in Resources */ = {isa = PBXBuildFile; fileRef = 2C2C5388251DF4D1009AE121 /* DecimalMinusTextField */; };
-		2C2C538A251DF4D1009AE121 /* DecimalMinusTextField in Resources */ = {isa = PBXBuildFile; fileRef = 2C2C5388251DF4D1009AE121 /* DecimalMinusTextField */; };
-		2C2C538B251DF4D1009AE121 /* DecimalMinusTextField in Resources */ = {isa = PBXBuildFile; fileRef = 2C2C5388251DF4D1009AE121 /* DecimalMinusTextField */; };
+		2C2C538D251EA6D5009AE121 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C538C251EA6D5009AE121 /* DecimalMinusTextField.swift */; };
+		2C2C538E251EA6D5009AE121 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C538C251EA6D5009AE121 /* DecimalMinusTextField.swift */; };
+		2C2C538F251EA6D5009AE121 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C538C251EA6D5009AE121 /* DecimalMinusTextField.swift */; };
+		2C2C5391251EAA78009AE121 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C5390251EAA78009AE121 /* SettingsViewController.swift */; };
+		2C2C5392251EAA78009AE121 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C5390251EAA78009AE121 /* SettingsViewController.swift */; };
+		2C2C5393251EAA78009AE121 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2C5390251EAA78009AE121 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 		2C2C534B251DCAFE009AE121 /* Conversion Calculator App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conversion Calculator App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2C534E251DCAFE009AE121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C2C5350251DCAFE009AE121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C2C5352251DCAFE009AE121 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C2C5352251DCAFE009AE121 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2C2C5355251DCAFE009AE121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C2C5357251DCB00009AE121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2C535A251DCB00009AE121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,8 +57,8 @@
 		2C2C536C251DCB00009AE121 /* Conversion Calculator AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Conversion Calculator AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2C5370251DCB00009AE121 /* Conversion_Calculator_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion_Calculator_AppUITests.swift; sourceTree = "<group>"; };
 		2C2C5372251DCB00009AE121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C2C5382251DDB3E009AE121 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecimalMinusTextField.swift; path = ../../github/DecimalMinusTextField/DecimalMinusTextField.swift; sourceTree = "<group>"; };
-		2C2C5388251DF4D1009AE121 /* DecimalMinusTextField */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DecimalMinusTextField; path = ../../github/DecimalMinusTextField; sourceTree = "<group>"; };
+		2C2C538C251EA6D5009AE121 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
+		2C2C5390251EAA78009AE121 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +109,12 @@
 		2C2C534D251DCAFE009AE121 /* Conversion Calculator App */ = {
 			isa = PBXGroup;
 			children = (
-				2C2C5388251DF4D1009AE121 /* DecimalMinusTextField */,
-				2C2C5382251DDB3E009AE121 /* DecimalMinusTextField.swift */,
+				2C2C538C251EA6D5009AE121 /* DecimalMinusTextField.swift */,
 				2C2C534E251DCAFE009AE121 /* AppDelegate.swift */,
 				2C2C5350251DCAFE009AE121 /* SceneDelegate.swift */,
-				2C2C5352251DCAFE009AE121 /* ViewController.swift */,
+				2C2C5352251DCAFE009AE121 /* MainViewController.swift */,
 				2C2C5354251DCAFE009AE121 /* Main.storyboard */,
+				2C2C5390251EAA78009AE121 /* SettingsViewController.swift */,
 				2C2C5357251DCB00009AE121 /* Assets.xcassets */,
 				2C2C5359251DCB00009AE121 /* LaunchScreen.storyboard */,
 				2C2C535C251DCB00009AE121 /* Info.plist */,
@@ -245,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2C535B251DCB00009AE121 /* LaunchScreen.storyboard in Resources */,
-				2C2C5389251DF4D1009AE121 /* DecimalMinusTextField in Resources */,
 				2C2C5358251DCB00009AE121 /* Assets.xcassets in Resources */,
 				2C2C5356251DCAFE009AE121 /* Main.storyboard in Resources */,
 			);
@@ -256,7 +255,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2C5386251DE03A009AE121 /* Main.storyboard in Resources */,
-				2C2C538A251DF4D1009AE121 /* DecimalMinusTextField in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2C5387251DE03B009AE121 /* Main.storyboard in Resources */,
-				2C2C538B251DF4D1009AE121 /* DecimalMinusTextField in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,9 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2C5353251DCAFE009AE121 /* ViewController.swift in Sources */,
+				2C2C5353251DCAFE009AE121 /* MainViewController.swift in Sources */,
 				2C2C534F251DCAFE009AE121 /* AppDelegate.swift in Sources */,
-				2C2C5383251DDB3E009AE121 /* DecimalMinusTextField.swift in Sources */,
+				2C2C538D251EA6D5009AE121 /* DecimalMinusTextField.swift in Sources */,
+				2C2C5391251EAA78009AE121 /* SettingsViewController.swift in Sources */,
 				2C2C5351251DCAFE009AE121 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,8 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2C5384251DDB3E009AE121 /* DecimalMinusTextField.swift in Sources */,
+				2C2C538E251EA6D5009AE121 /* DecimalMinusTextField.swift in Sources */,
 				2C2C5366251DCB00009AE121 /* Conversion_Calculator_AppTests.swift in Sources */,
+				2C2C5392251EAA78009AE121 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2C5385251DDB3E009AE121 /* DecimalMinusTextField.swift in Sources */,
+				2C2C538F251EA6D5009AE121 /* DecimalMinusTextField.swift in Sources */,
 				2C2C5371251DCB00009AE121 /* Conversion_Calculator_AppUITests.swift in Sources */,
+				2C2C5393251EAA78009AE121 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
