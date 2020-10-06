@@ -8,17 +8,61 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+//protocol MainViewControllerDelegate {
+//    func changeMode(input: String)
+//    func currentUnits(fromUnits: String, toUnits: String)
+//}
+class MainViewController: UIViewController{
+    
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var lengthTopEnterValue: DecimalMinusTextField!
     
     @IBOutlet weak var lengthBottomEnterValue: DecimalMinusTextField!
     
+    @IBOutlet weak var fromUnitLabel: UILabel!
+    @IBOutlet weak var toUnitLabel: UILabel!
+    
+    var fromUnit: String?
+    var toUnit: String?
+  //  var delegate: MainViewControllerDelegate?
+    var mode: String = "length"
+    var currentFromUnit: String = "Yards"
+    var currentToUnit: String = "Meters"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.lengthTopEnterValue.delegate = self
         self.lengthBottomEnterValue.delegate = self
+        self.fromUnitLabel.text = currentFromUnit
+        self.toUnitLabel.text = currentToUnit
+        if let fromLabel = self.fromUnit {
+            self.fromUnitLabel.text = fromLabel
+        }
+        if let toLabel = self.toUnit {
+            self.toUnitLabel.text = toLabel
+        }
     }
+    
+  
+//    override func viewWillDisappear(_ animated: Bool) {
+//           super.viewWillDisappear(animated)
+//           if let d = self.delegate {
+//            d.changeMode(input: mode)
+//            d.currentUnits(fromUnits: currentFromUnit, toUnits: currentToUnit)
+//           }
+//       }
+    
+    @IBAction func unwindToMain(segue: UIStoryboardSegue) {
+        
+    }
+    func settingsChanged(fromUnits: String, toUnits: String) {
+        self.fromUnitLabel.text = fromUnits
+        self.toUnitLabel.text = toUnits
+        currentFromUnit = fromUnits
+        currentToUnit = toUnits
+    }
+  
     
     func calcYardToMeters(yards: String) -> String {
         var numMeters: Double
@@ -54,16 +98,39 @@ class MainViewController: UIViewController {
     }
     
     
-}
+    @IBAction func settingsButtonPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segueToSettings", sender: self)
+    }
+    
+    @IBAction func modeButtonPressed(_ sender: UIButton) {
+        if titleLabel.text == "Length Conversion Calculator" {
+            titleLabel.text = "Volume Conversion Calculator"
+            fromUnitLabel.text = "Gallons"
+            toUnitLabel.text = "Liters"
+            mode = "volume"
+        } else {
+            titleLabel.text = "Length Conversion Calculator"
+            fromUnitLabel.text = "Yards"
+            toUnitLabel.text = "Meters"
+            mode = "length"
+        }
+        
+    }
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToSettings" {
+            let destVC = segue.destination as? SettingsViewController
+                destVC?.toUnitsLabel = self.toUnitLabel.text
+                destVC?.fromUnitsLabel = self.fromUnitLabel.text
+            }
+        }
+    }
+
 
 extension MainViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 
-        
-       return true
-    }
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        if(textField == self.lengthTopEnterValue) {
+        if textField == self.lengthTopEnterValue {
             lengthBottomEnterValue.text = nil
         } else {
             lengthTopEnterValue.text = nil
